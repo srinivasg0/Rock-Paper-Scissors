@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Rock Papers Scissors</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="rock-emoji.png">
+
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissors</p>
+        <button onclick="
+        playgame('rock');"
+        class="move-button">
+        <img src="rock-emoji.png" class="move-icon"></button>
+
+        <button onclick="
+        playgame('paper')"
+        class="move-button">
+        <img src="paper-emoji.png" class="move-icon"></button>
+
+        <button onclick="
+        playgame('scissors')"
+        class="move-button">
+        <img src="scissors-emoji.png" class="move-icon"></button>
+
+        <p class="js-result result"> </p>
+        <p class="js-move move">
+           <!-- You
+            <img src="rock-emoji.png" class="move-icon">
+            <img src="paper-emoji.png" class="move-icon">
+            Computer. 
+            COMMENTING THIS BECAUSE THIS IS A FAKE CODE TO STYLE IT IN CSS. COPY PASTE THIS IN JAVASCRIPT AS ITS DYNAMIC AND CHANGES WITH PLAYERS OPTIONS-->
+        </p>
+        <p class="js-display-score score">  </p> <!--this is changed by javascript dynamically using the class and DOM-->
+
+        <button onclick="
+        score.wins=0;
+        score.losses=0;
+        score.ties=0;
+        localStorage.removeItem('score');
+        updateScoreElement();"
+        class="reset-score-button">Reset Score</button>
+
+    <script src="rock-paper-scissors.js"></script>
+    </body>
+</html>
